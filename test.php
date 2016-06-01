@@ -1,9 +1,9 @@
 <?php 
-ini_set('memory_limit', '512M');
+ini_set('memory_limit', '512M'); // for large file 
 $dir =  dirname(__FILE__);
 require( $dir . '/class_zip.php' );
 $folder      = 'zip_this_folder';
-$filename = $folder  . '.zip';
+$filename = $dir . "/". $folder  . '.zip';
 $zip = new ZipFile();
 
 /*******************************************************************/
